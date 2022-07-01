@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #8E2424;
+    --cor-secundaria: #101828;
+    --cor-terciaria: #667085;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: 14vh;
+    background-color: #ffffff;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.nav-logo p {
+    height: 24px;
+    color: #3A404E;
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 24px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-list a {
+    color: #3A404E;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.logo-buttons {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.logo-buttons a {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.logo-buttons a:hover {
+    text-decoration: underline;
+}
+
+.logo-buttons button {
+    background: var(--cor-principal);
+    border-radius: 0.5rem;
+    border: none;
+    width: 112px;
+    height: 44px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 0.8rem 1.12rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 100px;
+}
+
+.about-us span {
+    color: var(--cor-principal);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.about-us h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 60px;
+}
+
+.about-us p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+    width: 790px;
+    color: var(--cor-terciaria);
+}
+
+
+.metrics {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10% 10% 0 10%;
+    gap: 30px;
+}
+
+.metric-items {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 19%;
+}
+
+.metric-items p {
+    /* flex-shrink: 1; */
+    font-weight: 600;
+    font-size: 3.75rem;
+    color: var(--cor-principal);
+}
+
+.metric-items h2 {
+    font-weight: 500;
+    font-size: 1.12rem;
+    color: var(--cor-secundaria);
+}
+
+.metric-items h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--cor-terciaria);
+}
+
+.vacancies {
+    display: flex;
+    flex-direction: column;
+}
+
+.looking-for-new-vacancies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    gap: 20px;
+}
+
+.looking-for-new-vacancies span {
+    padding: 4px 12px;
+    background-color: rgba(142, 36, 36, 0.05);
+    color: var(--cor-principal);
+    border-radius: 16px
+}
+
+.looking-for-new-vacancies h2 {
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--cor-secundaria);
+}
+
+.looking-for-new-vacancies p {
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--cor-terciaria);
+    margin-bottom: 44px;
+}
+
+.img-vacancies {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80%;
+}
+
+.open-vacancies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 17%;
+}
+
+.designer,
+.software-development {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: flex-start;
+    gap: 22px;
+    margin: 64px 0 10px 0;
+}
+
+.designer h2,
+.software-development h2 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 30px;
+    color: var(--cor-secundaria);
+}
+
+.open-vacancies-content {
+    width: 95%;
+    height: 136px;
+    border: 1px solid #EAECF0;
+    padding: 24px 24px 28px;
+    border-radius: 16px;
+}
+
+.open-vacancies-content h3 {
+    font-weight: 500;
+    font-size: 1.12rem;
+    line-height: 28px;
+    color: var(--cor-secundaria);
+    margin: 24px 0 32px 0;
+}
+
+.open-vacancies-content span {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--cor-terciaria);
+    margin-right: 24px;
+}
+
+.depositions {
+    margin-top: 96px;
+}
+
+/* Mobile */
+@media screen and (max-width:768px) {
+
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .pages {
+        order: 3;
+
+    }
+
+    .pages ul {
+        gap: 20px;
+    }
+
+    .pages a {
+        font-size: 1rem;
+
+    }
+
+    .logo-buttons button {
+        order: 2;
+        font-size: 0.8rem;
+    }
+
+    .about-us {
+        text-align: center;
+    }
+
+    .about-us p {
+        width: initial;
+    }
+
+    .metric-items {
+        width: initial;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
